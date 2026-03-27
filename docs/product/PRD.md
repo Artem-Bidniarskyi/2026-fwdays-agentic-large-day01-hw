@@ -53,15 +53,12 @@ The canvas supports 10 element families (`ExcalidrawElement` union in `packages/
 | Type | Description |
 |------|-------------|
 | `ExcalidrawGenericElement` | Rectangle, diamond, ellipse, selection |
-| `ExcalidrawTextElement` | Rich text with font, alignment, line height, auto-resize, container binding |
-| `ExcalidrawLinearElement` | Lines and polylines |
-| `ExcalidrawArrowElement` | Arrows with start/end bindings, elbow routing |
+| `ExcalidrawTextElement` | Rich text with font, alignment, auto-resize, container binding |
+| `ExcalidrawLinearElement` / `ArrowElement` | Lines, polylines, arrows (with bindings and elbow routing) |
 | `ExcalidrawFreeDrawElement` | Freehand drawing with pressure simulation |
 | `ExcalidrawImageElement` | Raster images linked via `FileId` |
-| `ExcalidrawFrameElement` | Named container for grouping and clipping |
-| `ExcalidrawMagicFrameElement` | AI-powered frame variant |
-| `ExcalidrawIframeElement` | Embedded iframe |
-| `ExcalidrawEmbeddableElement` | Embedded external content (e.g. YouTube) |
+| `ExcalidrawFrameElement` / `MagicFrameElement` | Named container for grouping/clipping; AI-powered variant |
+| `ExcalidrawIframeElement` / `EmbeddableElement` | Embedded iframes and external content (e.g. YouTube) |
 
 Every element carries: `id`, position/size, style properties (stroke, fill, roughness, opacity), `version`/`versionNonce` for sync, fractional `index` for multiplayer ordering, `groupIds`, `frameId`, `boundElements`, `isDeleted`.
 
@@ -143,12 +140,8 @@ Transport: configurable via `VITE_APP_WS_SERVER_URL` (defaults to `localhost:300
 
 ### 5.3 Import sources
 
-- **File open** via File System Access API or file input (`data/filesystem.ts`)
-- **Drag & drop** onto canvas
-- **Clipboard paste** (images, text, Excalidraw data)
-- **URL / embed** (images, iframes, embeddable URLs)
-- **Web Share Target** (PWA receives shared `.excalidraw` files)
-- **File Handler** (PWA opens `.excalidraw` files from OS)
+- **File open** via File System Access API or file input; **drag & drop** onto canvas; **clipboard paste** (images, text, Excalidraw data)
+- **URL / embed** (images, iframes, embeddable URLs); **Web Share Target** and **File Handler** (PWA receives/opens `.excalidraw` files)
 
 ### 5.4 Export options
 
