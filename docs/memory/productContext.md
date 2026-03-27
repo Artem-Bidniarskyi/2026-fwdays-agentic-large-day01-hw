@@ -35,6 +35,7 @@
 ## Details
 
 For domain glossary (codebase-specific term definitions: Element, Scene, AppState, Action, Store, …) → see [`docs/product/domain-glossary.md`](../product/domain-glossary.md).
+For full reverse-engineered PRD (tools, elements, collaboration, file formats, PWA, API) → see [`docs/product/PRD.md`](../product/PRD.md).
 
 ## Source verification
 

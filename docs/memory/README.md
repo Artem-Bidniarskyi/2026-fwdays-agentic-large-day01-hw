@@ -27,6 +27,7 @@ These files live outside the Memory Bank and provide deeper detail. Load them vi
 | Architecture | [`docs/technical/architecture.md`](../technical/architecture.md) | High-level diagrams, data flow, state management, rendering pipeline, package dependencies |
 | Domain glossary | [`docs/product/domain-glossary.md`](../product/domain-glossary.md) | Codebase-specific term definitions (Element, Scene, AppState, Action, Store, …) |
 | Dev setup | [`docs/technical/dev-setup.md`](../technical/dev-setup.md) | Onboarding: clone → install → dev server → tests → lint → first PR |
+| PRD | [`docs/product/PRD.md`](../product/PRD.md) | Reverse-engineered product requirements: tools, elements, collab, I/O, PWA, API |
 
 ---
 
