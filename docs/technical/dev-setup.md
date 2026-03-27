@@ -69,7 +69,7 @@ This runs `vite` inside `excalidraw-app/`. Vite config: `excalidraw-app/vite.con
 
 During development, **no pre-build is needed**. Vite `resolve.alias` entries in `vite.config.mts` point `@excalidraw/*` imports directly to source files:
 
-```
+```text
 @excalidraw/common   → packages/common/src/index.ts
 @excalidraw/element  → packages/element/src/index.ts
 @excalidraw/excalidraw → packages/excalidraw/index.tsx
@@ -215,7 +215,7 @@ yarn start:production  # build + http-server on port 5001
 
 ## 7. Project structure at a glance
 
-```
+```text
 ├── excalidraw-app/         # Vite app shell (React 19, Firebase, Socket.IO)
 │   ├── App.tsx             # Main app component
 │   ├── collab/             # Collaboration (WebSocket, reconciliation)

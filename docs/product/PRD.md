@@ -224,6 +224,7 @@ The `@excalidraw/excalidraw` package (`packages/excalidraw/`) exposes:
 | `canvasActions.toggleTheme` | `boolean \| null` | Theme toggle |
 | `tools.image` | `boolean` | Enable/disable image tool |
 | `dockedSidebarBreakpoint` | `number` | Width for auto-docking sidebar |
+| `getFormFactor` | `(editorWidth: number, editorHeight: number) => EditorInterface["formFactor"]` | Control editor form factor / desktop UI mode from host app (optional; internal default if omitted). See `UIOptions` in `packages/excalidraw/types.ts` |
 
 ### React peer dependencies
 
